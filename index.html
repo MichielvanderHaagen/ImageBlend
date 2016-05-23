@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>html5 blend test</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/blend.css">
+</head>
+
+<body onresize="resize_canvas()">
+	
+	<header>
+		<canvas id="myCanvas">
+		</canvas>
+	</header>
+	<main id="myText">	
+		<h1>HTML5 animatie experimenten</h1>
+		<p>
+		Dit is een pagina waarin ik HTML5 Canvas animatie onderzoek. Ik wil kijken hoe vloeiend en hoe krachtig canvas animatie is en of het op elk apparaat goied werkt.
+		Om te beginnen heb ik het canvas is altijd schermvullend gemaakt, ook als de venster grootte veranderd. 
+		Het beeld is opgebouwd uit een grote foto die ik over het hele scherm laat bewegen, met daaroverheen de zelfde foto horizontaal gespiegeld en halfdoorzichtig. 
+		</p>
+		<p>
+			Vul hieronder een URL van een grote afbeelding in.
+			<form  method="GET"  onsubmit="return changeImage(this);" name="imageform">
+				<input type="text" name="imageUrl" id="image_Url" size="50" maxlength="200">
+				<lable id="errorMessage"></lable>
+			</form>
+		</p>
+		<p>
+		</p>
+	</main>
+
+	<script src="js/blend.js"></script>
+</body>
+
+</html>
